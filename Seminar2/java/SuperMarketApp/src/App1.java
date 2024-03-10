@@ -5,7 +5,7 @@ import Classes.SpecialClient;
 import Classes.TaxInspector;
 import Interfaces.iActorBehaviour;
 
-public class App {
+public class App1 {
     public static void main(String[] args) throws Exception {
         Market magnit = new Market();
 

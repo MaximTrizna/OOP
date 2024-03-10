@@ -34,7 +34,7 @@ public class TaxInspector implements iActorBehaviour {
     }
 
     @Override
-    public Actor geActor() {
+    public Actor getActor() {
         return new OrdinaryClient(name);
     }
     
