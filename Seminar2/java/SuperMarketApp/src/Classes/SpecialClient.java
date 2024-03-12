@@ -33,8 +33,4 @@ public class SpecialClient extends Actor {
         return super.name;
     }
 
-    @Override
-    public void setName(String name) {
-        super.name = name;
-    }
 }

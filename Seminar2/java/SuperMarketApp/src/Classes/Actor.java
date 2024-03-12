@@ -12,7 +12,6 @@ public abstract class Actor implements iActorBehaviour {
     }
 
     public abstract String getName();
-    public abstract void setName(String name);
 }
 
 
