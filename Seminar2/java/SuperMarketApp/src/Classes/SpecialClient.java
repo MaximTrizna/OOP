@@ -1,9 +1,16 @@
 package Classes;
 
+/**
+ * Подкласс описывает VIP клиента
+ */
 public class SpecialClient extends Actor {
 
     private int idVIP;
 
+    /**
+     * @param name имя VIP клиента
+     * @param idVIP id VIP клиента
+     */
     public SpecialClient(String name, int idVIP) {
         super(name);
         this.idVIP = idVIP;

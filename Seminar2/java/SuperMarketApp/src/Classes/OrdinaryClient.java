@@ -1,7 +1,13 @@
 package Classes;
 
+/**
+ * Подкласс описывает обычного клиента
+ */
 public class OrdinaryClient extends Actor {
 
+    /**
+     * @param name имя обычного клиента
+     */
     public OrdinaryClient(String name) {
         super(name);
     }

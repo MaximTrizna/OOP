@@ -2,11 +2,18 @@ package Classes;
 
 import Interfaces.iReturnOrder;
 
+/**
+ * Подкласс описывает клиента, участвующего в акции
+ */
 public class PromoClient extends Actor implements iReturnOrder {
-    private static int id;
-    private static int participantsNumber;
-    private String nameOfPromo;
+    private static int id; // номер участника акции
+    private static int participantsNumber; // предельное количество участников акции
+    private String nameOfPromo; // наименование акции
 
+    /**
+     * @param name имя акционного клиента
+     * @param id номер акционного клиента
+     */
     public PromoClient(String name, int id) {
         super(name);
         PromoClient.id = id;
@@ -42,14 +49,23 @@ public class PromoClient extends Actor implements iReturnOrder {
         return super.name;
     }
 
+    /**
+     * @param participantsNumber предельное количество участников акции
+     */
     public static void setParticipantsNumber(int participantsNumber) {
         PromoClient.participantsNumber = participantsNumber;
     }
 
+    /**
+     * @param nameOfPromo наименование акции
+     */
     public void setNameOfPromo(String nameOfPromo) {
         this.nameOfPromo = nameOfPromo;
     }
 
+    /**
+     * Метод, определяющий попадает ли номер акционного клиента в установленный лимит участников акции
+     */
     public void setClientNumber() {
         if (id > participantsNumber) {
             System.out.println("Клиент " + super.name + " в акции " + nameOfPromo + " не участвует по причине превышения допустимого кол-ва участников");

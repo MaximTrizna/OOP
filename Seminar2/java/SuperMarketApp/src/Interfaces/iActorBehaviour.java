@@ -2,6 +2,9 @@ package Interfaces;
 
 import Classes.Actor;
 
+/**
+ * Интерфейс покупателя
+ */
 public interface iActorBehaviour {
 
     boolean isTakeOrder();

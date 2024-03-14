@@ -7,13 +7,23 @@ import Interfaces.iActorBehaviour;
 import Interfaces.iMarcketBehaviour;
 import Interfaces.iQueueBehaviour;
 
+/**
+ * Класс описывающий поведение покупателя в супермаркете
+ */
 public class Market implements iMarcketBehaviour, iQueueBehaviour {
 
+    /**
+     * формирование списка для покупателей
+     */
     private List<iActorBehaviour> queue;
 
+    /**
+     * Метод добавляет покупателя в список
+     */
     public Market() {
         this.queue = new ArrayList<>();
     }
+
 
     @Override
     public void acceptToMarket(iActorBehaviour actor) {
